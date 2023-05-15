@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Festival de Música</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body id="todo">
+  <header id="inicio">
+    <h1>Festival de Música</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#artistas">Artistas</a></li>
+        <li><a href="#horario">Horario</a></li>
+        <li><a href="#entradas">Entradas</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="./ajustes.html">Ajustes</a></li>
+      </ul>
+    </nav>
+    <div id="zonaModo" title="Cambiar modo dia/noche">
+      <img src="./images/dia.png" alt="Sol" id="dia" onclick="ponerModoDia()">
+      <img src="./images/noche.png" alt="Luna" id="noche" onclick="ponerModoNoche()">
+    </div>
+  </header>
+
+  <section>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h2>¡Bienvenido al Festival de Música!</h2>
+        <p>Disfruta de un fin de semana lleno de música y diversión.</p>
+        <a href="#entradas" class="button">Comprar entradas</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="artistas">
+    <h2>Artistas Destacados</h2>
+    <div class="artist-container">
+      <div class="artist">
+        <img src="./images/craiyon_172614_Electra_Starlight.png" alt="Artista 1">
+        <h3>Electra Starlight</h3>
+        <p>Electra Starlight es una artista electropop conocida por su estilo único y su voz seductora. Sus letras
+          inteligentes y su habilidad para combinar ritmos pegadizos con elementos electrónicos la convierten en una
+          verdadera sensación en el escenario. Electra es famosa por su energía enérgica y sus impresionantes
+          performances visuales, que incluyen trajes futuristas y coreografías elaboradas.</p>
+      </div>
+      <div class="artist">
+        <img src="./images/craiyon_172726_The_Velvet_Souls.png" alt="Artista 2">
+        <h3>The Velvet Souls</h3>
+        <p>The Velvet Souls es un grupo de música formado por cinco talentosos cantantes y músicos. Su sonido distintivo
+          combina influencias del R&B clásico y el soul contemporáneo, creando una experiencia auditiva y emocionalmente
+          cautivadora. Con armonías suaves y melodías soulful, The Velvet Souls tienen la habilidad de transportar a su
+          audiencia a un viaje musical nostálgico con un toque moderno.</p>
+      </div>
+      <div class="artist">
+        <img src="./images/craiyon_173315_Luna_Verde.png" alt="Artista 3">
+        <h3>Luna Verde</h3>
+        <p>Luna Verde es una cantautora de folk alternativo que cautiva con su voz suave y melancólica. Sus letras
+          poéticas y su habilidad para tocar múltiples instrumentos, como la guitarra acústica y el violín, crean una
+          atmósfera íntima y emotiva. Con su estilo bohemio y letras introspectivas, Luna Verde se conecta profundamente
+          con su audiencia, dejando una impresión duradera.</p>
+      </div>
+      <div class="artist">
+        <img src="./images/craiyon_173933_The_Thunderbeats.png" alt="Artista 4">
+        <h3>The Thunderbeats</h3>
+        <p>The Thunderbeats es una banda de rock & roll que hace vibrar los escenarios con su energía inigualable y su
+          actitud rebelde. Sus riffs de guitarra poderosos, el bajo contundente y los solos de batería estruendosos
+          forman el núcleo de su sonido explosivo. Con letras llenas de rebeldía y pasión, The Thunderbeats hacen que el
+          público salte, grite y se entregue por completo.</p>
+      </div>
+      <div class="artist">
+        <img src="./images/craiyon_173956_Aurora_Latina.png" alt="Artista 5">
+        <h3>Aurora Latina</h3>
+        <p>Aurora Latina es una talentosa cantante y bailarina que fusiona ritmos latinos y africanos en su música. Su
+          voz enérgica y su presencia magnética en el escenario encienden una chispa en el corazón de todos los
+          espectadores. Con una banda que combina instrumentos tradicionales y modernos, Aurora Latina crea un ambiente
+          festivo y contagioso que invita a la audiencia a moverse y celebrar la diversidad cultural.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="horario">
+    <h2>Horario</h2>
+    <table>
+      <tr>
+        <th>Día</th>
+        <th>Hora</th>
+        <th>Artista</th>
+      </tr>
+      <tr>
+        <td>Día 1</td>
+        <td>19:00 - 20:30</td>
+        <td>
+          <img src="./images/craiyon_175438_Concierto_de_Electra_Starlight.png" alt="Artista 6">
+          <p>Electra Starlight</p>
+        </td>
+      </tr>
+      <td>Día 1</td>
+      <td>21:30 - 23:00</td>
+      <td>
+        <img src="./images/craiyon_175459_Concierto_de_Luna_Verde.png" alt="Artista 6">
+        <p>Luna Verde</p>
+      </td>
+      </tr>
+      <tr>
+        <td>Día 2</td>
+        <td>21:00 - 22:30</td>
+        <td>
+          <img src="./images/craiyon_175249_Concierto_The_Velvet_Souls.png" alt="Artista 7">
+          <p>The Velvet Souls</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Día 3</td>
+        <td>18:30 - 20:00</td>
+        <td>
+          <img src="./images/craiyon_175309_Concierto_de_Aurora_Latina.png" alt="Artista 8">
+          <p>Aurora Latina</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Día 3</td>
+        <td>21:30 - 23:00</td>
+        <td>
+          <img src="./images/craiyon_175349_Concierto_de_The_Thunderbeats.png" alt="Artista 9">
+          <p>The Thunderbeats</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="entradas">
+    <h2>Comprar entradas</h2>
+    <div class="ticket-container">
+      <div class="ticket-image">
+        <img src="./images/craiyon_174928_Ventas_de_entradas_en_festival_de_musica.png" alt="Venta de entradas">
+      </div>
+      <div class="ticket-form">
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="entradas">Número de entradas:</label>
+          <input type="number" id="entradas" name="entradas" min="1" required>
+
+          <label for="pago">Forma de pago:</label>
+          <select id="pago" name="pago" required>
+            <option value="">Seleccionar</option>
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="paypal">PayPal</option>
+            <option value="transferencia">Transferencia bancaria</option>
+          </select>
+
+          <button type="submit" class="button">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="noticias">
+    <h2>Últimas Noticias</h2>
+    <div class="news-container">
+      <div class="news">
+        <img
+          src="./images/craiyon_173912_Estrella_del_pop_internacional_sorprende_a_los_fans_en_el_Festival_de_M_sica__pica.png"
+          alt="Noticia 1">
+        <h3>Estrella del pop internacional sorprende a los fans en el Festival de Música Épica</h3>
+        <p>En una noche llena de emociones, la reconocida estrella del pop internacional, Harmony, hizo una aparición
+          sorpresa en el Festival de Música Épica para deleitar a sus fans. Con un set enérgico y cargado de hits,
+          Harmony se adueñó del escenario principal, desatando la euforia entre la multitud. Los asistentes quedaron
+          maravillados con su talento vocal, su coreografía impecable y su carisma deslumbrante. Sin duda, fue un
+          momento inolvidable para los fanáticos del festival.</p>
+      </div>
+      <div class="news">
+        <img
+          src="./images/craiyon_174247_Nueva_promesa_del_indie_rock_se_roba_el_show_en_el_Festival_de_M_sica_Alternativa.png"
+          alt="Noticia 2">
+        <h3>Nueva promesa del indie rock se roba el show en el Festival de Música Alternativa</h3>
+        <p>El Festival de Música Alternativa fue testigo de una actuación extraordinaria por parte de la nueva promesa
+          del indie rock, The Midnight Haze. Con su sonido fresco y su actitud desenfadada, la banda cautivó a la
+          audiencia con su música enérgica y letras conmovedoras. La combinación perfecta entre guitarras vibrantes y
+          melodías adictivas llevó a los asistentes a un estado de éxtasis musical. The Midnight Haze demostró que son
+          una fuerza imparable en la escena del rock independiente.</p>
+      </div>
+      <div class="news">
+        <img
+          src="./images/craiyon_174315_Innovador_DJ_sorprende_al_p_blico_con_un_set_revolucionario_en_el_Festival_de_M_sica_Electr_nica.png"
+          alt="Noticia 3">
+        <h3>Innovador DJ sorprende al público con un set revolucionario en el Festival de Música Electrónica</h3>
+        <p>El Festival de Música Electrónica se convirtió en el epicentro de la innovación musical cuando el visionario
+          DJ, Neonix, subió al escenario principal. Con una combinación única de géneros y una fusión de sonidos
+          electrónicos vanguardistas, Neonix llevó al público a un viaje sónico sin precedentes. Su dominio de la mezcla
+          en vivo y su habilidad para crear una atmósfera hipnótica mantuvieron a todos los asistentes inmersos en una
+          experiencia de baile inigualable. Neonix dejó una marca indeleble en la historia del festival.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="localizacion">
+    <h2>Localización</h2>
+    <img src="./images/craiyon_175831_Mapa_en_2D_de_un_festival_de_musica.png">
+    <div class="map-container">
+      <div id="map"></div>
+      <div class="description">
+        <h3>Descripción del Lugar</h3>
+        <p>Bienvenidos al impresionante escenario del Festival de Música Épica. Ubicado en un entorno mágico y
+          pintoresco, este lugar cautivará tus sentidos desde el momento en que pongas un pie en él.
+          <br>
+          <br>
+          El festival se encuentra en un vasto terreno rodeado por majestuosas montañas que se elevan hacia el cielo,
+          ofreciendo un telón de fondo impresionante para las actuaciones musicales. El aire fresco y puro envuelve el
+          lugar, creando una atmósfera revitalizante y energizante.
+          <br>
+          <br>
+          Un río serpenteante fluye cerca del área del festival, proporcionando un oasis de tranquilidad y añadiendo un
+          toque natural a la experiencia. Los asistentes pueden disfrutar de momentos de relajación junto al agua,
+          refrescarse en las áreas designadas para nadar o simplemente deleitarse con la vista y los sonidos serenos.
+          <br>
+          <br>
+          El escenario principal, imponente y deslumbrante, se encuentra en el corazón del festival. Está diseñado con
+          tecnología de vanguardia y ofrece una calidad de sonido e iluminación excepcionales, creando un ambiente
+          envolvente y mágico para las presentaciones de los artistas.
+          <br>
+          <br>
+          Además, el lugar cuenta con múltiples escenarios secundarios distribuidos estratégicamente, donde se llevan a
+          cabo actuaciones simultáneas, brindando a los asistentes una amplia variedad de géneros musicales para
+          disfrutar. Cada escenario está cuidadosamente diseñado para proporcionar una experiencia íntima y cercana con
+          los artistas, permitiendo que la música resuene en cada fibra del ser.
+          <br>
+          <br>
+          En los alrededores, encontrarás áreas de descanso y espacios para socializar, donde los asistentes pueden
+          disfrutar de deliciosas opciones gastronómicas que abarcan desde comida callejera hasta platos gourmet, así
+          como una amplia selección de bebidas refrescantes.
+          <br>
+          <br>
+          Con su entorno natural impresionante, una acústica espectacular y una atmósfera llena de emociones, el lugar
+          del Festival de Música Épica te invita a sumergirte en una experiencia musical única y dejarte llevar por la
+          magia que solo la música en vivo puede ofrecer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>Contacto: info@festivaldemusica.com | Teléfono: 123-456-7890</p>
+  </footer>
+
+  <script src="./diaNoche.js"></script>
+</body>
+
+</html>

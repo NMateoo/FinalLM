@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes</title>
+</head>
+<body>
+    
+    <section id="ajustes">
+        <h2>Colores del modo día</h2>
+        <p id="esteParrafo">Color de fondo</p>
+        <input type="color" name="colorElegido">
+        <p>Color de letra</p>
+        <input type="color" name="colorElegido">
+        <br>
+        <h2>Colores del modo noche</h2>
+        <p id="esteParrafo">Color de fondo</p>
+        <input type="color" name="colorElegido">
+        <p>Color de letra</p>
+        <input type="color" name="colorElegido">
+        <br>
+        <p>Elige el tamaño de la fuente</p>
+        <select name="tamFuente">
+            <option value="0.8">Pequeña</option>
+            <option value="1.0" selected="selected">Mediana</option>
+            <option value="1.4">Grande</option>
+        </select>
+
+        <button type="button" onclick="aplicarCambios()">Aplicar</button>
+    </section>
+
+    <script src="./ajustes.js"></script>
+</body>
+</html>
