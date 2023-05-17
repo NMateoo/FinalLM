@@ -4,7 +4,7 @@ function leerModoActual() {
     let modo = window.localStorage.getItem("modoGuardado");
 
     if (!modo) {
-        modo = "noche";
+        modo = "dia";
     }
     return modo;
 }
