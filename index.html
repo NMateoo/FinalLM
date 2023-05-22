@@ -12,13 +12,14 @@
     <h1>Festival de Música</h1>
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="./index.html">Inicio</a></li>
         <li><a href="#artistas">Artistas</a></li>
         <li><a href="#horario">Horario</a></li>
         <li><a href="#entradas">Entradas</a></li>
         <li><a href="#noticias">Noticias</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li><a href="./ajustes.html">Ajustes</a></li>
+        <li><a href="./xml.html">XML</a></li>
       </ul>
     </nav>
     <div id="zonaModo" title="Cambiar modo dia/noche">
@@ -142,10 +143,10 @@
       <div class="ticket-form">
         <form>
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
+          <input type="text" id="nombre" name="nombre" required autocomplete="off">
 
           <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required autocomplete="off">
 
           <label for="entradas">Número de entradas:</label>
           <input type="number" id="entradas" name="entradas" min="1" required>
@@ -203,56 +204,11 @@
     </div>
   </section>
 
-  <section id="localizacion">
-    <h2>Localización</h2>
-    <img src="./images/craiyon_175831_Mapa_en_2D_de_un_festival_de_musica.png">
-    <div class="map-container">
-      <div id="map"></div>
-      <div class="description">
-        <h3>Descripción del Lugar</h3>
-        <p>Bienvenidos al impresionante escenario del Festival de Música Épica. Ubicado en un entorno mágico y
-          pintoresco, este lugar cautivará tus sentidos desde el momento en que pongas un pie en él.
-          <br>
-          <br>
-          El festival se encuentra en un vasto terreno rodeado por majestuosas montañas que se elevan hacia el cielo,
-          ofreciendo un telón de fondo impresionante para las actuaciones musicales. El aire fresco y puro envuelve el
-          lugar, creando una atmósfera revitalizante y energizante.
-          <br>
-          <br>
-          Un río serpenteante fluye cerca del área del festival, proporcionando un oasis de tranquilidad y añadiendo un
-          toque natural a la experiencia. Los asistentes pueden disfrutar de momentos de relajación junto al agua,
-          refrescarse en las áreas designadas para nadar o simplemente deleitarse con la vista y los sonidos serenos.
-          <br>
-          <br>
-          El escenario principal, imponente y deslumbrante, se encuentra en el corazón del festival. Está diseñado con
-          tecnología de vanguardia y ofrece una calidad de sonido e iluminación excepcionales, creando un ambiente
-          envolvente y mágico para las presentaciones de los artistas.
-          <br>
-          <br>
-          Además, el lugar cuenta con múltiples escenarios secundarios distribuidos estratégicamente, donde se llevan a
-          cabo actuaciones simultáneas, brindando a los asistentes una amplia variedad de géneros musicales para
-          disfrutar. Cada escenario está cuidadosamente diseñado para proporcionar una experiencia íntima y cercana con
-          los artistas, permitiendo que la música resuene en cada fibra del ser.
-          <br>
-          <br>
-          En los alrededores, encontrarás áreas de descanso y espacios para socializar, donde los asistentes pueden
-          disfrutar de deliciosas opciones gastronómicas que abarcan desde comida callejera hasta platos gourmet, así
-          como una amplia selección de bebidas refrescantes.
-          <br>
-          <br>
-          Con su entorno natural impresionante, una acústica espectacular y una atmósfera llena de emociones, el lugar
-          del Festival de Música Épica te invita a sumergirte en una experiencia musical única y dejarte llevar por la
-          magia que solo la música en vivo puede ofrecer.
-        </p>
-      </div>
-    </div>
-  </section>
-
   <footer id="contacto">
     <p>Contacto: info@festivaldemusica.com | Teléfono: 123-456-7890</p>
   </footer>
 
   <script src="./diaNoche.js"></script>
+  <script src="./ajustes.js"></script>
 </body>
-
 </html>

@@ -1,19 +1,30 @@
 :root {
+  /* Colores dia */
   --colorFondo1: #f1f1f1;
   --colorLetrasN: #000;
   --colorFondo: #ffffff;
   --colorLetrasG: #888888;
+
+  /* Colores noche */
+  /*--colorFondo1: #222222;
+  --colorLetrasN: #ffffff;
+  --colorFondo: #333333;
+  --colorLetrasG: #aaaaaa;*/
+
+  /* Transiciones */
+  --transition: .25s;
 }
 
 * {
   box-sizing: border-box;
-  transition: .25s;
+  transition: var(--transition);
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -22,10 +33,14 @@ h2 {
   color: var(--colorLetrasN);
 }
 
-header,footer {
+#inicio, #contacto {
   background-color: var(--colorFondo1);
   padding: 20px;
   text-align: center;
+}
+
+#contacto {
+  background-color: var(--colorFondo);
 }
 
 ul {
@@ -245,17 +260,11 @@ form {
   text-align: center;
 }
 
-#localizacion {
-  text-align: center;
-  margin: 1em;
-}
-
 #zonaModo {
   position: fixed;
   top: 10px;
   right: 10px;
   width: 50px;
-
 }
 
 #dia,
@@ -271,4 +280,53 @@ form {
   cursor: pointer;
   box-shadow: none;
   transform: none;
+}
+
+h3,th,p,label,td {
+  color: var(--colorLetrasN);
+}
+
+#ajustes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#ajustes h2 {
+  width: 120%;
+  padding: 20px;
+  background-color: var(--colorFondo1);
+}
+
+#ajustes p {
+  color: var(--colorLetrasN);
+}
+
+#cuerpoAjustes {
+  background-color: var(--colorFondo);
+}
+
+#ajustes div {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  border: black solid 2px;
+}
+
+#ajustes #d1 {
+  background-color: var(--colorFondo1);
+}
+
+#ajustes #d2 {
+  background-color: var(--colorFondo);
+}
+
+#ajustes #d3 {
+  background-color: var(--colorLetrasN);
+}
+
+#ajustes #d4 {
+  background-color: var(--colorLetrasG);
 }

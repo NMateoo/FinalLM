@@ -5,32 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajustes</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    
+<body id="cuerpoAjustes">
+    <header id="inicio">
+        <h1>Festival de Música</h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./index.html#artistas">Artistas</a></li>
+            <li><a href="./index.html#horario">Horario</a></li>
+            <li><a href="./index.html#entradas">Entradas</a></li>
+            <li><a href="./index.html#noticias">Noticias</a></li>
+            <li><a href="./index.html#contacto">Contacto</a></li>
+            <li><a href="./ajustes.html">Ajustes</a></li>
+            <li><a href="./xml.html">XML</a></li>
+          </ul>
+        </nav>
+        <div id="zonaModo" title="Cambiar modo dia/noche">
+          <img src="./images/dia.png" alt="Sol" id="dia" onclick="ponerModoDia()">
+          <img src="./images/noche.png" alt="Luna" id="noche" onclick="ponerModoNoche()">
+        </div>
+      </header>
+
     <section id="ajustes">
-        <h2>Colores del modo día</h2>
-        <p id="esteParrafo">Color de fondo</p>
+        <h2>Ajustar colores</h2>
+        <p id="esteParrafo">Color de fondo 1</p>
         <input type="color" name="colorElegido">
-        <p>Color de letra</p>
+        <div id="d1"></div>
+        <p id="esteParrafo">Color de fondo 2</p>
         <input type="color" name="colorElegido">
+        <div id="d2"></div>
+        <p>Color de letra 1</p>
+        <input type="color" name="colorElegido">
+        <div id="d3"></div>
+        <p>Color de letra 2</p>
+        <input type="color" name="colorElegido">
+        <div id="d4"></div>
         <br>
-        <h2>Colores del modo noche</h2>
-        <p id="esteParrafo">Color de fondo</p>
-        <input type="color" name="colorElegido">
-        <p>Color de letra</p>
-        <input type="color" name="colorElegido">
-        <br>
-        <p>Elige el tamaño de la fuente</p>
-        <select name="tamFuente">
-            <option value="0.8">Pequeña</option>
-            <option value="1.0" selected="selected">Mediana</option>
-            <option value="1.4">Grande</option>
-        </select>
 
         <button type="button" onclick="aplicarCambios()">Aplicar</button>
     </section>
 
     <script src="./ajustes.js"></script>
+    <script src="./diaNoche.js"></script>
 </body>
 </html>
