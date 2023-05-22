@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 en ralla</title>
+    <link rel="stylesheet" href="./tresEnRalla.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<header id="inicio">
+    <h1>Festival de Música</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./index.html#artistas">Artistas</a></li>
+            <li><a href="./index.html#horario">Horario</a></li>
+            <li><a href="./index.html#entradas">Entradas</a></li>
+            <li><a href="./index.html#noticias">Noticias</a></li>
+            <li><a href="./index.html#contacto">Contacto</a></li>
+            <li><a href="./ajustes.html">Ajustes</a></li>
+            <li><a href="./xml.html">XML</a></li>
+        </ul>
+    </nav>
+    <div id="zonaModo" title="Cambiar modo dia/noche">
+        <img src="./images/dia.png" alt="Sol" id="dia" onclick="ponerModoDia()">
+        <img src="./images/noche.png" alt="Luna" id="noche" onclick="ponerModoNoche()">
+    </div>
+</header>
+
+<body>
+    <div id="container">
+        <div id="1" onmouseenter="hover(1)" onmouseleave="desmarcar(1)" onclick="pintar(1)"></div>
+        <div id="2" onmouseenter="hover(2)" onmouseleave="desmarcar(2)" onclick="pintar(2)"></div>
+        <div id="3" onmouseenter="hover(3)" onmouseleave="desmarcar(3)" onclick="pintar(3)"></div>
+        <div id="4" onmouseenter="hover(4)" onmouseleave="desmarcar(4)" onclick="pintar(4)"></div>
+        <div id="5" onmouseenter="hover(5)" onmouseleave="desmarcar(5)" onclick="pintar(5)"></div>
+        <div id="6" onmouseenter="hover(6)" onmouseleave="desmarcar(6)" onclick="pintar(6)"></div>
+        <div id="7" onmouseenter="hover(7)" onmouseleave="desmarcar(7)" onclick="pintar(7)"></div>
+        <div id="8" onmouseenter="hover(8)" onmouseleave="desmarcar(8)" onclick="pintar(8)"></div>
+        <div id="9" onmouseenter="hover(9)" onmouseleave="desmarcar(9)" onclick="pintar(9)"></div>
+    </div>
+    <script src="./tresEnRalla.js"></script>
+</body>
+
+</html>
