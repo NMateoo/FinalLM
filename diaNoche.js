@@ -18,10 +18,10 @@ if (modo == "dia") {
 }
 
 function ponerModoDia() {
-    document.documentElement.style.setProperty('--colorFondo1','#f1f1f1')
-    document.documentElement.style.setProperty('--colorLetrasN','#000')
-    document.documentElement.style.setProperty('--colorFondo','#ffffff')
-    document.documentElement.style.setProperty('--colorLetrasG','#888888')
+    document.documentElement.style.setProperty('--colorFondo1', '#f1f1f1')
+    document.documentElement.style.setProperty('--colorLetrasN', '#000')
+    document.documentElement.style.setProperty('--colorFondo', '#ffffff')
+    document.documentElement.style.setProperty('--colorLetrasG', '#888888')
 
     window.localStorage.setItem("modoGuardado", "dia");
     let iconoDia = document.getElementById("dia");
@@ -31,10 +31,10 @@ function ponerModoDia() {
 }
 
 function ponerModoNoche() {
-    document.documentElement.style.setProperty('--colorFondo1','#222222')
-    document.documentElement.style.setProperty('--colorLetrasN','#ffffff')
-    document.documentElement.style.setProperty('--colorFondo','#333333')
-    document.documentElement.style.setProperty('--colorLetrasG','#aaaaaa')
+    document.documentElement.style.setProperty('--colorFondo1', '#222222')
+    document.documentElement.style.setProperty('--colorLetrasN', '#ffffff')
+    document.documentElement.style.setProperty('--colorFondo', '#333333')
+    document.documentElement.style.setProperty('--colorLetrasG', '#aaaaaa')
 
     window.localStorage.setItem("modoGuardado", "noche")
     let iconoDia = document.getElementById("dia");
