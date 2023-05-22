@@ -40,10 +40,6 @@ h2 {
   text-align: center;
 }
 
-#contacto {
-  background-color: var(--colorFondo);
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -225,7 +221,7 @@ form {
 
 #noticias {
   padding: 20px;
-  background-color: var(--colorFondo1);
+  background-color: var(--colorFondo);
 }
 
 .news-container {
