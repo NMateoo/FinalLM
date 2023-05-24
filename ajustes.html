@@ -15,11 +15,6 @@
         <nav>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./index.html#artistas">Artistas</a></li>
-                <li><a href="./index.html#horario">Horario</a></li>
-                <li><a href="./index.html#entradas">Entradas</a></li>
-                <li><a href="./index.html#noticias">Noticias</a></li>
-                <li><a href="./index.html#contacto">Contacto</a></li>
                 <li><a href="./ajustes.html">Ajustes</a></li>
                 <li><a href="./xml.html">XML</a></li>
                 <li><a href="./tresEnRalla.html">TA TE TI</a></li>
@@ -28,10 +23,13 @@
         <div id="zonaModo" title="Cambiar modo dia/noche">
             <img src="./images/dia.png" alt="Sol" id="dia" onclick="ponerModoDia()">
             <img src="./images/noche.png" alt="Luna" id="noche" onclick="ponerModoNoche()">
+            <p id="textoUsuario">Sin identidicar</p>
         </div>
     </header>
 
     <section id="ajustes">
+        <label for="">Usuario</label>
+        <input type="text" id="nombreUsuarioCampo">
         <h2>Ajustar colores</h2>
         <p id="esteParrafo">Color de fondo 1</p>
         <input type="color" name="colorElegido" value=var(--colorFondo)>
@@ -47,13 +45,23 @@
         <div id="d4"></div>
         <br>
 
-        <button type="button" onclick="aplicarCambios()">Aplicar</button>
+        <button type="button" onclick="guardar()"  >Aplicar</button>
         <button type="button" id="borrarLocalStorage">Resetear colores</button>
     </section>
 
+    <script>
+        var usuario=sessionStorage.getItem("usuarioGuardado");
+        
+        if(usuario) {
+            document.getElementById("nombreUsuario").innerText=usuario;
+        }
+    </script>
     <script src="./ajustes.js"></script>
     <script src="./diaNoche.js"></script>
     <script src="./borrarDatos.js"></script>
+    <script src="./script.js"></script>
+
+    
 </body>
 
 </html>

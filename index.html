@@ -13,12 +13,8 @@
     <nav>
         <ul>
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./index.html#artistas">Artistas</a></li>
-            <li><a href="./index.html#horario">Horario</a></li>
-            <li><a href="./index.html#entradas">Entradas</a></li>
-            <li><a href="./index.html#noticias">Noticias</a></li>
-            <li><a href="./index.html#contacto">Contacto</a></li>
             <li><a href="./ajustes.html">Ajustes</a></li>
+            <li><a onclick="abrirModal()">Modal</a></li>
             <li><a href="./xml.html">XML</a></li>
             <li><a href="./tresEnRalla.html">TA TE TI</a></li>
         </ul>
@@ -28,6 +24,12 @@
         <img src="./images/noche.png" alt="Luna" id="noche" onclick="ponerModoNoche()">
     </div>
 </header>
+
+  <div id="modal" style="display:none">
+    <p>Nicolás Mateo Macías 1º DAM</p>
+    <p>En la pagina principal encontramos </p>
+    <a onclick="cerrarModal()">Cerrar</a>
+  </div>
 
   <section>
     <div class="hero-image">
@@ -211,6 +213,14 @@
 
   <script src="./diaNoche.js"></script>
   <script src="./ajustes.js"></script>
+  <script>
+    function abrirModal() {
+      document.getElementById("modal").style.display="block";
+    }
+    function cerrarModal() {
+      document.getElementById("modal").style.display="none";
+    }
+  </script>
 </body>
 
 </html>
