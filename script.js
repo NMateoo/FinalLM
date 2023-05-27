@@ -95,4 +95,13 @@ document.getElementById("borrarLocalStorage").addEventListener("click", function
     // Mensaje de confirmación
     location.reload();
     alert("Colores reseteados correctamente");
-  });
+});
+
+//FUNCION PARA ABRIR Y CERRAR EL MODAL
+function abrirModal() {
+    document.getElementById("modal").style.display="block";
+}
+    
+function cerrarModal() {
+    document.getElementById("modal").style.display="none";
+}
