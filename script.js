@@ -67,6 +67,8 @@ function aplicarCambios() {
     window.localStorage.setItem('colorFondo2', colorFondoDia2);
     window.localStorage.setItem('colorLetras1', colorLetraDia1);
     window.localStorage.setItem('colorLetras2', colorLetraDia2);
+
+    alert("Colores y usuario guardados correctamente")
 }
 
 // Leer los colores guardados en localStorage
