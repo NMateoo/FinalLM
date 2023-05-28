@@ -15,12 +15,8 @@
     <nav>
         <ul>
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./index.html#artistas">Artistas</a></li>
-            <li><a href="./index.html#horario">Horario</a></li>
-            <li><a href="./index.html#entradas">Entradas</a></li>
-            <li><a href="./index.html#noticias">Noticias</a></li>
-            <li><a href="./index.html#contacto">Contacto</a></li>
             <li><a href="./ajustes.html">Ajustes</a></li>
+            <li><a onclick="abrirModal()">Modal</a></li>
             <li><a href="./xml.html">XML</a></li>
             <li><a href="./tresEnRalla.html">TA TE TI</a></li>
         </ul>
@@ -28,8 +24,44 @@
     <div id="zonaModo" title="Cambiar modo dia/noche">
         <img src="./images/dia.png" alt="Sol" id="dia" onclick="ponerModoDia()">
         <img src="./images/noche.png" alt="Luna" id="noche" onclick="ponerModoNoche()">
+        <br>
+        <p id="textoUsuario">Sin identidicar</p>
     </div>
 </header>
+
+<div id="modal" style="display:none">
+    <h3>Modal</h3>
+    <p>Nicolás Mateo Macías 1º DAM</p>
+    <p>En la pagina principal encontramos la barra
+      de navegacion, la cual tiene varios botones para
+      navegar por las distintas paginas. El boton de Inicio,
+      nos lleva a la pagina principal, Ajustes nos lleva a la
+      pagina de ajustes, donde podremos cambiar los colores de la 
+      pagina y identificarnos. Y el boton TA TE TI, que nos lleva al
+      juego 3 en ralla.
+    </p>
+    <p>Tambien vemos un boton XML, el cual nos lleva al
+      XML de la pagina. Tambien vemos un boton Modal, el cual
+      abre un modal en la pagina. Destacar que el modal
+      se abre en todas las paginas de la web
+    </p>
+    <p>En la pagina de inicio tambien podemos ver
+      pequeñas secciones con informacion sobre el concierto,
+      con una seccion con informacion sobre los artistas, el horario
+      del festival, un formulario para comprar entradas, 
+      algunas noticias relevantes y el footer, con la informacion
+      de contacto.
+    </p>
+    <p>En la pagina de ajustes vemos un campo para introducir nuestro nombre
+      , el cual aparecera debajo del icono dia/noche. Este nombre, al recargar la pagina
+      o al cambiar de pagina se borrara. Debajo vemos 4 campos para cambiar los colores de 
+      la pagina, que por defecto es negro, pero se pueden modificar a tu gusto.
+      Por ultimo vemos dos botones, el primero para cambiar los colores, y el segundo para
+      volver a los colores originales de la pagina. Dato importante, al pulsar el boton
+      que reinicia los colores, tambien se borrara el nombre de usuario
+    </p>
+    <a onclick="cerrarModal()">Cerrar</a>
+  </div>
 
 <body>
     <div id="container">
@@ -44,6 +76,7 @@
         <div id="9" onmouseenter="hover(9)" onmouseleave="desmarcar(9)" onclick="pintar(9)"></div>
     </div>
     <script src="./tresEnRalla.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

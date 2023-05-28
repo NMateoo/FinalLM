@@ -46,26 +46,27 @@ function ponerModoNoche() {
 
 //AJUSTES DE COLOR
 function aplicarCambios() {
-    // mostramos en consola los valores recogidos en la pagina
-    var colorFondoDia1 = document.getElementsByName('colorElegido')[0];
-    console.log('Color fondo dia 1: ' + colorFondoDia1.value);
-    var colorFondoDia2 = document.getElementsByName('colorElegido')[1];
-    console.log('Color fondo dia 2: ' + colorFondoDia2.value2);
-    var colorLetraDia1 = document.getElementsByName('colorElegido')[2];
-    console.log('Color letra dia: ' + colorLetraDia1.value);
-    var colorLetraDia2 = document.getElementsByName('colorElegido')[3];
-    console.log('Color letra dia: ' + colorLetraDia2.value);
+    // Mostramos en consola los valores recogidos en la página
+    var colorFondoDia1 = document.getElementsByName('colorElegido')[0].value;
+    console.log('Color fondo día 1: ' + colorFondoDia1);
+    var colorFondoDia2 = document.getElementsByName('colorElegido')[1].value;
+    console.log('Color fondo día 2: ' + colorFondoDia2);
+    var colorLetraDia1 = document.getElementsByName('colorElegido')[2].value;
+    console.log('Color letra día 1: ' + colorLetraDia1);
+    var colorLetraDia2 = document.getElementsByName('colorElegido')[3].value;
+    console.log('Color letra día 2: ' + colorLetraDia2);
 
-    // aplicamos el color a todo el documento
-    document.documentElement.style.setProperty("--colorFondo1", colorFondoDia1.value);
-    document.documentElement.style.setProperty("--colorFondo", colorFondoDia2.value);
-    document.documentElement.style.setProperty("--colorLetrasN", colorLetraDia1.value);
-    document.documentElement.style.setProperty("--colorLetrasG", colorLetraDia2.value);
+    // Aplicamos el color a todo el documento
+    document.documentElement.style.setProperty("--colorFondo1", colorFondoDia1);
+    document.documentElement.style.setProperty("--colorFondo", colorFondoDia2);
+    document.documentElement.style.setProperty("--colorLetrasN", colorLetraDia1);
+    document.documentElement.style.setProperty("--colorLetrasG", colorLetraDia2);
 
-    window.localStorage.setItem('colorFondo1', colorFondoDia1.value);
-    window.localStorage.setItem('colorFondo2', colorFondoDia2.value);
-    window.localStorage.setItem('colorLetra1', colorLetraDia1.value);
-    window.localStorage.setItem('colorLetra2', colorLetraDia2.value);
+    // Guardamos los colores en el localStorage
+    window.localStorage.setItem('colorFondo1', colorFondoDia1);
+    window.localStorage.setItem('colorFondo2', colorFondoDia2);
+    window.localStorage.setItem('colorLetras1', colorLetraDia1);
+    window.localStorage.setItem('colorLetras2', colorLetraDia2);
 }
 
 // Leer los colores guardados en localStorage
@@ -82,17 +83,15 @@ function leerColoresGuardados() {
         document.documentElement.style.setProperty("--colorLetrasG", colorLetras2);
     }
 }
+
 window.addEventListener('load', leerColoresGuardados);
+
 
 //REINICIAR COLORES
 document.getElementById("borrarLocalStorage").addEventListener("click", function() {
     // Borra todo el contenido del local storage
     localStorage.clear();
-  
-    // O bien, si solo deseas borrar una clave específica, utiliza:
-    // localStorage.removeItem('nombreClave');
-  
-    // Mensaje de confirmación
+
     location.reload();
     alert("Colores reseteados correctamente");
 });
@@ -104,4 +103,12 @@ function abrirModal() {
     
 function cerrarModal() {
     document.getElementById("modal").style.display="none";
+}
+
+function guardarUsuario() {
+    var nombreUsuario = document.getElementById('nombreUsuarioCampo').value;
+    document.getElementById('textoUsuario').textContent = nombreUsuario;
+
+    sessionStorage.setItem('nombreUsuario', nombreUsuario);
+    console.log("Usuario guardado: "+nombreUsuario)
 }

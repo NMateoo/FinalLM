@@ -62,6 +62,7 @@ a {
 li a:hover {
   background-color: var(--colorLetrasN);
   color: var(--colorFondo1);
+  cursor: pointer;
 }
 
 img:hover {
@@ -260,8 +261,9 @@ form {
 #zonaModo {
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 30px;
   width: 50px;
+  text-align: center;
 }
 
 #dia,
@@ -331,4 +333,25 @@ td {
 
 #ajustes #d4 {
   background-color: var(--colorLetrasG);
+}
+
+#modal {
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: var(--colorFondo1);
+  color: var(--colorLetrasN);
+}
+
+#modal a {
+  background-color: red;
+}
+
+#modal a:hover {
+  background-color: rgb(164, 0, 0);
+  cursor: pointer;
+}
+
+#textoUsuario {
+  padding-top: 15px;
 }
