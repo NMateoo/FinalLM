@@ -380,3 +380,7 @@ td {
   color: red;
   font-size: 72px;
 }
+
+#bodyTres {
+  background-color: var(--colorFondo);
+}
