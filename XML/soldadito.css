@@ -1,20 +1,42 @@
 body {
-    counter-reset: section;
-    /* Set a counter named 'section', and its initial value is 0. */
-    background-color: rgb(231, 171, 93);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    counter-reset: section estrofa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-p{
-    color:black;
-    font: oblique bold 120% cursive;
-    background-color: rgb(198, 119, 218);
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+h3::before {
+    counter-increment: estrofa;
+    content: "" counter(estrofa) "º ";
 }
 
 p::before {
     counter-increment: section;
-    /* Increment the value of section counter by 1 */
-    content: "Verso " counter(section) ": ";
-    /* Display the word 'Section ', the value of
-                                                  section counter, and a colon before the content
-                                                  of each h3 */
-} 
+    content: "-Verso " counter(section) ": ";
+    color: red;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+    color: blue;
+    flex-wrap: wrap;
+    max-width: 300px;
+    padding: 0px 10px 0px;
+}
