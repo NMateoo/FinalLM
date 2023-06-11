@@ -16,18 +16,15 @@
   </xsl:template>
 
   <xsl:template match="estrofa">
-      <span>
-      <h3>
-        Estrofa 
-        </h3>
+    <span>
+      <h3>Estrofa</h3>
       <xsl:apply-templates />
     </span>
   </xsl:template>
-  
-    <xsl:template match="verso">
-    
-      <p>
-        <xsl:value-of select="."/>
+
+  <xsl:template match="verso">
+    <p>
+      <xsl:value-of select="."/>
     </p>
   </xsl:template>
 

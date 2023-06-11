@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Soldadito.xsl"?>
+<cancion>
+	<titulo>La Camisa Negra</titulo>
+	<autor>Juanes</autor>
+	<letras>
+		<estrofa>
+			<verso>Tengo la camisa negra</verso>
+			<verso>Hoy, mi amor está de luto</verso>
+			<verso>Hoy, tengo en el alma una pena</verso>
+			<verso>Y es por culpa de tu embrujo</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Hoy, sé que tú ya no me quieres</verso>
+			<verso>Y eso es lo que más me hiere</verso>
+			<verso>Que tengo la camisa negra</verso>
+			<verso>Y una pena que me duele</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Mal parece que solo me quedé</verso>
+			<verso>Y fue pura todita tu mentira</verso>
+			<verso>Qué maldita mala suerte la mía</verso>
+			<verso>Que aquel día te encontré</verso>
+		</estrofa>
+		<estrofa>
+			<verso>Por beber del veneno malevo de tu amor</verso>
+			<verso>Yo quedé moribundo y lleno de dolor</verso>
+			<verso>Respiré de ese humo amargo de tu adiós</verso>
+			<verso>Y desde que tú te fuiste, yo solo tengo</verso>
+		</estrofa>
+	</letras>
+</cancion>

@@ -19,6 +19,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
 h3::before {
     counter-increment: estrofa;
     content: "" counter(estrofa) "º ";
@@ -33,10 +37,9 @@ p::before {
 span {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: yellow;
+    width: 300px;
     color: blue;
     flex-wrap: wrap;
-    max-width: 300px;
     padding: 0px 10px 0px;
 }

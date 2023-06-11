@@ -114,3 +114,19 @@ function guardarUsuario() {
     sessionStorage.setItem('nombreUsuario', nombreUsuario);
     console.log("Usuario guardado: "+nombreUsuario)
 }
+
+var contadorSrc;
+
+function cambiarSrc() {
+    if (contadorSrc === 0) {
+        var iframe = document.getElementById("iframe");
+        var nuevoSrc = "./XML/soldadito.xml";
+        iframe.src = nuevoSrc;
+        contadorSrc = 1;
+    } else {
+        var iframe = document.getElementById("iframe");
+        var nuevoSrc = "./XML/camisaNegra.xml";
+        iframe.src = nuevoSrc;
+        contadorSrc = 0;
+    }
+}
